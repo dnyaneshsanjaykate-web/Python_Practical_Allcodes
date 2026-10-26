@@ -1,0 +1,27 @@
+# Accept two numbers and a string
+a = float(input("Enter first number: "))
+b = float(input("Enter second number: "))
+s = input("Enter a string: ")
+
+# Arithmetic operations
+print("\nArithmetic Operations:")
+print("Addition:", a + b)
+print("Subtraction:", a - b)
+print("Multiplication:", a * b)
+
+if b != 0:
+    print("Division:", a / b)
+    print("Floor Division:", a // b)
+    print("Modulus:", a % b)
+else:
+    print("Division by zero is not possible")
+
+print("Exponentiation:", a ** b)
+
+# String operations
+print("\nString Operations:")
+print("Concatenation:", s + " Python")
+print("Repetition:", s * 3)
+print("Slicing:", s[0:3])
+print("Uppercase:", s.upper())
+print("Lowercase:", s.lower())
