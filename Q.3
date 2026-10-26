@@ -1,0 +1,31 @@
+# Accept marks in 5 subjects
+m1 = float(input("Enter marks for Subject 1: "))
+m2 = float(input("Enter marks for Subject 2: "))
+m3 = float(input("Enter marks for Subject 3: "))
+m4 = float(input("Enter marks for Subject 4: "))
+m5 = float(input("Enter marks for Subject 5: "))
+
+# Calculate average
+total = m1 + m2 + m3 + m4 + m5
+avg = total / 5
+
+print("Total Marks:", total)
+print("Average:", avg)
+
+# Assign grade
+if avg >= 80:
+    print("Grade: A")
+elif avg >= 70:
+    print("Grade: B")
+elif avg >= 60:
+    print("Grade: C")
+elif avg >= 35:
+    print("Grade: D")
+else:
+    print("Grade: F")
+
+# Check individual subject passing
+if m1 >= 35 and m2 >= 35 and m3 >= 35 and m4 >= 35 and m5 >= 35:
+    print("Result: Passed all subjects")
+else:
+    print("Result: Failed in one or more subjects")
