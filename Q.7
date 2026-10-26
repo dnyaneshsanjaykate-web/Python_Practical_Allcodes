@@ -1,0 +1,61 @@
+# Create a tuple
+t = (10, 20, 30, 40, 50)
+
+# Print slice
+print("Slice:", t[1:4])
+
+# Show tuple immutability
+try:
+    t[1] = 25
+except TypeError:
+    print("Tuple is immutable")
+
+# Modify tuple using list
+lst = list(t)
+lst[1] = 25
+t = tuple(lst)
+
+print("Modified tuple:", t)
+
+
+
+A = {1, 2, 3, 4}
+B = {3, 4, 5, 6}
+
+print("Union:", A | B)
+print("Intersection:", A & B)
+print("Difference:", A - B)
+print("Symmetric Difference:", A ^ B)
+
+# Remove duplicates
+lst = [1, 2, 2, 3, 3]
+unique = set(lst)
+
+print("Without duplicates:", unique)
+
+
+
+# Create dictionary
+students = {
+    "Asha": 82,
+    "Ravi": 75,
+    "Meera": 91
+}
+
+# Add a new student
+students["Kiran"] = 68
+
+# Update marks
+students["Ravi"] = 80
+
+# Delete an entry
+del students["Meera"]
+
+# Print keys, values and key-value pairs
+print("Keys:", students.keys())
+print("Values:", students.values())
+print("Items:", students.items())
+
+
+
+
