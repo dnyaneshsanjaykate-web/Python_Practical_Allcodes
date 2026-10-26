@@ -1,0 +1,18 @@
+marks = {"Asha": 82, "Ravi": 35, "Meera": 91, "Kiran": 58, "Neha": 40}
+
+# a) Squares of even numbers from 1 to 20
+squares = [n**2 for n in range(1, 21) if n % 2 == 0]
+print("Squares of even numbers:", squares)
+
+# b) Students who have passed (marks >= 40)
+passed = {name: mark for name, mark in marks.items() if mark >= 40}
+print("Passed students:", passed)
+
+# c) Assign grades to students
+grades = {
+    name: "Distinction" if mark >= 75
+    else "Pass" if mark >= 40
+    else "Fail"
+    for name, mark in marks.items()
+}
+print("Student grades:", grades)
